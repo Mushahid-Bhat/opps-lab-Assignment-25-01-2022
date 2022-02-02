@@ -1,0 +1,87 @@
+// question 1 ,opps lab 25/01/2022
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	float n;	int m;
+
+	cout<<"Enter Total purchases"<<"\n";
+
+	cin>>n;
+
+	cout<<"press 1 if you are a teacher else press 2"<<"\n";
+
+	cin>>m;
+
+	if(m==1){
+
+		if(n>=100){
+
+			float d;
+
+			d=0.12*n;
+
+			float dt;
+
+			dt=n-d;
+
+			float st;
+
+			st=0.05*n;
+
+float t;
+
+t=dt+st;
+
+cout<<"Total purcheses = "<<"$"<<n<<"\n"<<"Teachers discount (12%) = "<<d<<"\n"<<"Discounted Total = "<<dt<<"\n"<<"sales tax(5%) = "<<st<<"\n"<<"Total = "<<"$"<<t<<"\n";
+
+		}
+
+else{
+
+	float d;
+
+	d=0.10*n;
+
+	float dt;
+
+	dt=n-d;
+
+	float st;
+
+	st=0.05*n;
+
+	float t;
+
+	t=dt+st;
+
+cout<<"Total purcheses = "<<"$"<<n<<"\n"<<"Teachers discount (10%) = "<<d<<"\n"<<"Discounted Total = "<<dt<<"\n"<<"sales tax(5%) = "<<st<<"\n"<<"Total = "<<"$"<<t<<"\n";
+
+}
+
+	}
+
+else if(m==2){
+
+		float d;
+
+			float st;
+
+			st=0.05*n;
+
+			float t;
+
+			t=n+st;
+
+cout<<"Total purcheses = "<<"$"<<n<<"\n"<<"sales tax(5%) = "<<st<<"\n"<<"Total = "<<"$"<<t<<"\n";
+
+		}
+
+	
+
+    return 0;
+
+}
